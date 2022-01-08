@@ -1,0 +1,41 @@
+.moon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.list {
+    display: flex;
+    gap: 30;
+    justify-content: space-between;
+    font-family: Barlow Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #D0D6F9;
+
+}
+.moontext {
+    width: 445px;
+    height: 472px;
+}
+.moontexthead {
+    font-family: Bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 115px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+.moontextsub {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    /* or 178% */
+    color: #D0D6F9;
+}

@@ -1,0 +1,19 @@
+.moon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.list {
+    display: flex;
+    gap: 30;
+    justify-content: center;
+}
+.moontext {
+    font-family: Bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 115px;
+    color: #FFFFFF;
+}

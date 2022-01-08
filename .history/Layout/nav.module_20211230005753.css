@@ -1,0 +1,14 @@
+.nav {
+    background: transparent;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 100;
+}
+
+.ul {
+    display: flex;
+    gap: 35;
+}

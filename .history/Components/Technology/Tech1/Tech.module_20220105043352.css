@@ -1,0 +1,50 @@
+.techhome {
+    display: flex;
+    justify-content: space-around;
+}
+.numbers {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+.number {
+    width: 80px;
+    height: 80px;
+    margin: 1rem 0;
+    border-radius: 70%;
+    background-color: #fff;
+    border-left: #000;
+}
+.techtext {
+    width: 470px;
+    height: 303px;
+    align-self: center;
+    margin-top: 4rem;
+}
+.techtexthead {
+    font-family: Barlow Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #D0D6F9;
+}
+.techtextsub {
+    font-family: Bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 64px;
+    color: #FFFFFF;
+}
+.techtextbody {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    /* or 178% */
+    color: #D0D6F9;
+    margin: 2rem 0;
+}

@@ -1,0 +1,9 @@
+.Home{
+    background: url('../public/assets/home/background-home-desktop.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}

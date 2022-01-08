@@ -1,0 +1,26 @@
+.crewSplit {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 2rem 0 4rem;
+}
+.crewtexthead {
+    font-family: Bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    /* identical to box height */
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+.crewtextsub {
+    font-family: Bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 64px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}

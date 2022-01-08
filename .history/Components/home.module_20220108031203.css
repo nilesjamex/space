@@ -1,0 +1,67 @@
+.Homes {
+    background: url('../public/assets/home/background-home-desktop.jpg');
+    background-size: cover;
+    height: 100%;
+}
+.Home{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    }
+.HomeText {
+    width: 40%;
+}
+.HomeTextsub {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+    color: #D0D6F9;
+}
+.HomeTextspace {
+    font-family: Bellefair, "serif";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 150px;
+    line-height: 172px;
+    color: #FFFFFF;
+    display: block;
+    width: 80;
+}
+.HomeTextsubs {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    color: #D0D6F9;
+    text-align: left;
+    width: 60%;
+    margin-top: 0.2rem;
+}
+.Explore {
+    height: 274px;
+    width: 274px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.ExploreText {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem auto;
+    font-family: Bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 2px;
+    color: #0B0D17;
+}

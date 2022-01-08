@@ -1,0 +1,7 @@
+.nav {
+    background: transparent;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}

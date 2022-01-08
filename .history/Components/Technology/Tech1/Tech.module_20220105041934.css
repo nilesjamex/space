@@ -1,0 +1,15 @@
+.techhome {
+    display: flex;
+    justify-content: space-between;
+}
+.numbers {
+    display: flex;
+    flex-direction: column;
+}
+.number {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: #fff;
+    border-left: #000;
+}

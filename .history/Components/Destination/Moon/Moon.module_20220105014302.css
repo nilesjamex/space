@@ -1,0 +1,11 @@
+.moon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.list {
+    display: flex;
+    gap: 30;
+    justify-content: center;
+}

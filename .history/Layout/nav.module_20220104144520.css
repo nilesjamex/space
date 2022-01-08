@@ -1,0 +1,21 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    width: 100%;
+    height: 10vh;
+    
+}
+
+.ul {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    color: #fff;
+    background-color: rgb(225 , 204, 223, 0.6);
+}
+
+.navBody {
+    height: 100%;
+}
