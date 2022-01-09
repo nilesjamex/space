@@ -1,0 +1,100 @@
+.techhome {
+    display: flex;
+    justify-content: space-around;
+}
+.numbers {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+.number {
+    width: 80px;
+    height: 80px;
+    margin: 1rem 0;
+    border-radius: 70%;
+    background-color: #000;
+    border-left: #000;
+    font-family: 'Bellefair', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    /* identical to box height */
+    text-align: center;
+    align-items: center;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    padding: 1.5rem;
+}
+.techtext {
+    width: 470px;
+    height: 303px;
+    align-self: center;
+    margin-top: 4rem;
+}
+.techtexthead {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #D0D6F9;
+}
+.techtextsub {
+    font-family: 'Bellefair', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 64px;
+    color: #FFFFFF;
+    margin-top: 2rem;
+}
+.techtextbody {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    /* or 178% */
+    color: #D0D6F9;
+    margin: 2rem 0;
+}
+.imagediv {
+    margin-right: -8rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .techhome {
+        display: flex;
+        flex-direction: column;
+    }
+    .numbers {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+        justify-content: center;
+    }
+    .number {
+        margin: 1rem;
+    }
+    .TechNumbers {
+        order: 2;
+    }
+    .techtext {
+        width: 470px;
+        height: 303px;
+        align-self: center;
+        margin-top: 2rem;
+        order: 3;
+    }
+    .image {
+        width: 100vw;
+    }
+    .imagediv {
+        margin-top: 2rem;
+        order: 1;
+    }
+}
