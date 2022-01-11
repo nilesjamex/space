@@ -6,9 +6,7 @@
     width: 100%;
     height: 10vh;
     }
-.line {
-  display: none;
-}
+
 .ul {
     display: flex;
     width: 50%;
@@ -44,7 +42,7 @@
       }
       .ul {
         order: 3;
-        width: 100%;
+        width: 70%;
         height: 100%;
         display: inline-block;
         position: fixed;
@@ -60,8 +58,7 @@
         overflow-x: hidden;
         transform: translateX(100vh);
         transition: all ease-out 0.2s;
-        background: rgba(255, 255, 255, 0.04);
-        backdrop-filter: blur(81.5485px);
+        background-color: rgba(24, 36, 59);
       }
       .li {
         margin: 0 0 2rem;
@@ -69,7 +66,7 @@
         transform: translateY(0);
       }
       .activenav {
-        transform: translateX(-50vh);
+        transform: translateY(0);
       }
       .li {
         margin: 0 0 2rem;

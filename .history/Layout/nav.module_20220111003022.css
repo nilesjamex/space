@@ -6,9 +6,7 @@
     width: 100%;
     height: 10vh;
     }
-.line {
-  display: none;
-}
+
 .ul {
     display: flex;
     width: 50%;

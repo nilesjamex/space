@@ -4,9 +4,7 @@ import styles from './Tech.module.css';
 import Vehicle from '../../../public/assets//technology/image-launch-vehicle-landscape.jpg';
 import Vehicle2 from '../../../public/assets//technology/image-launch-vehicle-portrait.jpg';
 import Spaceport from '../../../public/assets//technology/image-spaceport-landscape.jpg';
-import Spaceport2 from '../../../public/assets//technology/image-spaceport-portrait.jpg';
 import Capsule from '../../../public/assets//technology/image-space-capsule-landscape.jpg';
-import Capsule2 from '../../../public/assets//technology/image-space-capsule-portrait.jpg';
 const Tech = () => {
     const [steps, setSteps] = useState(1);
 
@@ -68,9 +66,6 @@ const Tech = () => {
   of the Earth’s rotation for launch.</p>
   </div>
  <div className={styles.imagediv}><Image src={Spaceport} height="527" width="515" alt="uu" /> </div>
- <div className={styles.imagediv2}>
-  <Image className={styles.images} src={Spaceport2}  objectFit="contain" alt="uu" /> 
-  </div>
         </div>
     );
 
@@ -97,9 +92,6 @@ const Tech = () => {
   and plenty of other activities to keep you entertained.</p>
   </div>
   <div className={styles.imagediv}><Image src={Capsule} height="527" width="515" alt="uu" /> </div>
-  <div className={styles.imagediv2}>
-  <Image className={styles.images} src={Capsule2}  objectFit="contain" alt="uu" /> 
-  </div>
         </div>
          )
     }

@@ -9,34 +9,9 @@ import Titan from '../../../public/assets/destination/image-titan.png';
 const Mars = () => {
     const [steps, setSteps] = useState(1);
     const [true1, setTrue1] = useState(true)
-    const [true2, setTrue2] = useState(false)
-    const [true3, setTrue3] = useState(false)
-    const [true4, setTrue4] = useState(false)
-
-    const click2 = () => {
-        setTrue1(false);
-        setTrue2(true);
-        setTrue3(false);
-        setTrue4(false);
-    }
-    const click3 = () => {
-        setTrue1(false);
-        setTrue2(false);
-        setTrue3(true);
-        setTrue4(false);
-    }
-    const click4 = () => {
-        setTrue1(false);
-        setTrue2(false);
-        setTrue3(false);
-        setTrue4(true);
-    }
-    const click1 = () => {
-        setTrue1(true);
-        setTrue2(false);
-        setTrue3(false);
-        setTrue4(false);
-    }
+    const [true2, setTrue2] = useState(true)
+    const [true3, setTrue3] = useState(true)
+    const [true4, setTrue4] = useState(true)
 
     const next = (e) => {
         e.preventDefault();
@@ -60,9 +35,8 @@ const Mars = () => {
   <li>Moon</li>
   <li onClick={next}>Mars</li>
   <li onClick={(e) => {
-      setSteps(steps+2);
+      setSteps(steps+2)
   }}> Europa</li>
-
   <li onClick={(e) => {
       setSteps(steps+3)
   }}>Titan</li>

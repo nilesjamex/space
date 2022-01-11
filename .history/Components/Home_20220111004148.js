@@ -8,7 +8,7 @@ const Home = () => {
     const scramble = useRef();
     const tl = new TimelineLite()
     useLayoutEffect(() => {
-        gsap.from(scramble, {duration: 2, x: 0, ease: "none"} )
+        gsap.to(scramble, {duration: 2, x: 0, ease: "none"} )
     }, )
     return (
         <div className={Styles.Homes} >

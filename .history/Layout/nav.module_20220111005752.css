@@ -7,7 +7,9 @@
     height: 10vh;
     }
 .line {
-  display: none;
+  height: 100%;
+  width: 12px;
+  background-color: white;
 }
 .ul {
     display: flex;

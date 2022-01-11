@@ -60,9 +60,8 @@ const Mars = () => {
   <li>Moon</li>
   <li onClick={next}>Mars</li>
   <li onClick={(e) => {
-      setSteps(steps+2);
+      setSteps(steps+2)
   }}> Europa</li>
-
   <li onClick={(e) => {
       setSteps(steps+3)
   }}>Titan</li>

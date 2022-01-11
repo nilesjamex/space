@@ -8,7 +8,7 @@ const Home = () => {
     const scramble = useRef();
     const tl = new TimelineLite()
     useLayoutEffect(() => {
-        gsap.from(scramble, {duration: 2, x: 0, ease: "none"} )
+        tl.to(scramble, {duration: 2, x: 0, ease: "none"} )
     }, )
     return (
         <div className={Styles.Homes} >
@@ -17,8 +17,8 @@ const Home = () => {
         </div>
         <div>
         <div className={Styles.Home}>
-        <div ref={el => scramble = el} className={Styles.HomeText}>
-            <h3 className={Styles.HomeTextsub} >So, you want to travel to </h3>
+        <div className={Styles.HomeText}>
+            <h3 className={Styles.HomeTextsub} ref={el => {scramble = el}}>So, you want to travel to </h3>
   <h1 className={Styles.HomeTextspace}>Space</h1>
   <h3 className={Styles.HomeTextsubs}>Let’s face it; if you want to go to space, you might as well genuinely go to 
   outer space and not hover kind of on the edge of it. Well sit back, and relax 

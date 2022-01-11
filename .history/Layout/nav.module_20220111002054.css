@@ -6,9 +6,7 @@
     width: 100%;
     height: 10vh;
     }
-.line {
-  display: none;
-}
+
 .ul {
     display: flex;
     width: 50%;
@@ -58,18 +56,18 @@
         align-items: center;
         flex-direction: column;
         overflow-x: hidden;
-        transform: translateX(100vh);
+        background: rgba(242, 245, 250);
+        transform: translateX(50vh);
         transition: all ease-out 0.2s;
-        background: rgba(255, 255, 255, 0.04);
-        backdrop-filter: blur(81.5485px);
+        background-color: rgba(24, 36, 59);
       }
       .li {
         margin: 0 0 2rem;
         opacity: 0;
-        transform: translateY(0);
+        transform: translateY(10vh);
       }
       .activenav {
-        transform: translateX(-50vh);
+        transform: translateY(50vh);
       }
       .li {
         margin: 0 0 2rem;
