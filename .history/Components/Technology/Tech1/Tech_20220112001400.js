@@ -67,7 +67,7 @@ const Tech = () => {
   famous Cape Canaveral, our spaceport is ideally situated to take advantage 
   of the Earth’s rotation for launch.</p>
   </div>
- <div className={styles.imagediv}><Image src={Spaceport2} height="527" width="515" alt="uu" /> </div>
+ <div className={styles.imagediv}><Image src={Spaceport} height="527" width="515" alt="uu" /> </div>
  <div className={styles.imagediv2}>
   <Image className={styles.images} src={Spaceport}  objectFit="contain" alt="uu" /> 
   </div>
@@ -96,9 +96,9 @@ const Tech = () => {
   you will spend your time during the flight. It includes a space gym, cinema, 
   and plenty of other activities to keep you entertained.</p>
   </div>
-  <div className={styles.imagediv}><Image src={Capsule2} height="527" width="515" alt="uu" /> </div>
+  <div className={styles.imagediv}><Image src={Capsule} height="527" width="515" alt="uu" /> </div>
   <div className={styles.imagediv2}>
-  <Image className={styles.images} src={Capsule}  objectFit="contain" alt="uu" /> 
+  <Image className={styles.images} src={Capsule2}  objectFit="contain" alt="uu" /> 
   </div>
         </div>
          )
