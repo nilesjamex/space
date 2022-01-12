@@ -2,7 +2,7 @@ import React, {useRef, useLayoutEffect} from 'react';
 import Styles from './home.module.css';
 import Nav from './../Layout/Nav';
 import { gsap, TimelineLite, Power3} from 'gsap';
-import Link from 'next/link';
+import { Link } from 'next/link';
 
 
 const Home = () => {
@@ -26,7 +26,7 @@ const Home = () => {
   because we’ll give you a truly out of this world experience! </h3>
   </div>
 <div className={Styles.Explore}>
-  <h2 className={Styles.ExploreText}><Link href="/Destination">Explore </Link></h2>
+  <h2 className={Styles.ExploreText}><Link href="/Destination" />Explore </Link></h2>
   </div>
   </div>
         </div>
