@@ -1,21 +1,35 @@
 import React from 'react';
-import Slider from "react-slick";
+import styles from './crew.module.css'
+import Nav from '../../Layout/Nav';
 import Image from 'next/image';
-import styles from './Members.module.css'
+import Members from './Members/Members';
+import Slider from "react-slick";
 import Doug from '../../../public/assets/crew/image-douglas-hurley.png'
-const Members = () => {
-    const settings = {
+
+
+const Crew = () => {
+  const settings = {
       dots: true,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1
     };
-
-    return (
+  return (
+    <div className={styles.home}>
+     <div>
+         <Nav/>
+        </div>
         <div>
-        <h2>kk</h2>
-          <Slider {...settings}>
+        <div>
+           <h3 className={styles.hometext}> 02 Meet your crew</h3>
+        </div>
+        </div>
+        <div>
+
+        <Members />
+        </div>
+         <Slider {...settings}>
           <div className={styles.crewSplit}>
         <div className={styles.crewText}>
         <p className={styles.crewtexthead}>Commander</p>
@@ -72,7 +86,8 @@ const Members = () => {
         </div>
         </div>
         </Slider>  
-        </div>
-    )
+    </div>
+  )
 }
-export default Members
+
+export default Crew

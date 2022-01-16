@@ -14,7 +14,6 @@ const Members = () => {
 
     return (
         <div>
-        <h2>kk</h2>
           <Slider {...settings}>
           <div className={styles.crewSplit}>
         <div className={styles.crewText}>
