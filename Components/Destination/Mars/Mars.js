@@ -1,51 +1,23 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import Image from "next/image";
 import styles from './Mars.module.css';
 import Moon from '../../../public/assets/destination/image-moon.png';
 import Marss from '../../../public/assets/destination/image-mars.webp';
 import Europa from '../../../public/assets/destination/image-europa.png';
 import Titan from '../../../public/assets/destination/image-titan.png';
+import { StepContext } from './../../../Contexts/Steps';
 
 const Mars = () => {
     const [steps, setSteps] = useState(1);
-    const [true1, setTrue1] = useState(true)
-    const [true2, setTrue2] = useState(false)
-    const [true3, setTrue3] = useState(false)
-    const [true4, setTrue4] = useState(false)
-
-    const click2 = () => {
-        setTrue1(false);
-        setTrue2(true);
-        setTrue3(false);
-        setTrue4(false);
-    }
-    const click3 = () => {
-        setTrue1(false);
-        setTrue2(false);
-        setTrue3(true);
-        setTrue4(false);
-    }
-    const click4 = () => {
-        setTrue1(false);
-        setTrue2(false);
-        setTrue3(false);
-        setTrue4(true);
-    }
-    const click1 = () => {
-        setTrue1(true);
-        setTrue2(false);
-        setTrue3(false);
-        setTrue4(false);
-    }
-
+   
     const next = (e) => {
-        e.preventDefault();
         setSteps(steps + 1);
     }
     const prev = (e) => {
-        e.preventDefault();
         setSteps(steps - 1);
     };
+
+    const {click1, click2, click3, click4, true1, true2, true3, true4} = useContext(StepContext)
 
     switch (steps) {
         case 1:
@@ -57,15 +29,30 @@ const Mars = () => {
         <div className={styles.moontext}>
         <div>
         <ul className={styles.list}>
-  <li>Moon</li>
-  <li onClick={next}>Mars</li>
+  <li onClick={(e) => {
+      click1()
+  }}>Moon
+  <hr className={`${true1 ? styles.lineshow : styles.linehide}`} />
+  </li>
+  <li onClick={(e) => {
+      next()
+      click2()
+      }}>Mars
+  <hr className={`${true2 ? styles.lineshow : styles.linehide}`} />
+  </li>
   <li onClick={(e) => {
       setSteps(steps+2);
-  }}> Europa</li>
+      click3()
+  }}> Europa
+  <hr className={`${true3 ? styles.lineshow : styles.linehide}`} />
+  </li>
 
   <li onClick={(e) => {
       setSteps(steps+3)
-  }}>Titan</li>
+      click4()
+  }}>Titan
+  <hr className={`${true4 ? styles.lineshow : styles.linehide}`} />
+  </li>
   </ul>
         </div>
         <div>
@@ -101,12 +88,29 @@ const Mars = () => {
         <div className={styles.moontext}>
         <div>
         <ul className={styles.list}>
-  <li onClick={prev}>Moon</li>
-  <li>Mars</li>
-  <li onClick={next}> Europa</li>
+  <li onClick={(e) => {
+      prev()
+      click1()
+      }}>Moon 
+  <hr className={`${true1 ? styles.lineshow : styles.linehide}`} />
+  </li>
+  <li onClick={(e) => {
+      click2()
+  }}>Mars 
+  <hr className={`${true2 ? styles.lineshow : styles.linehide}`} />
+  </li>
+  <li onClick={(e) => {
+      next()
+      click3()
+      }}> Europa
+  <hr className={`${true3 ? styles.lineshow : styles.linehide}`} />
+  </li>
   <li onClick={(e) => {
       setSteps(steps+2)
-  }}>Titan</li>
+      click4()
+  }}>Titan
+  <hr className={`${true4 ? styles.lineshow : styles.linehide}`} />
+  </li>
   </ul>
         </div>
         <div>
@@ -142,10 +146,28 @@ const Mars = () => {
         <div>
         <ul className={styles.list}>
   <li onClick={(e) => {
-      setSteps(steps-2)}}>Moon</li>
-  <li onClick={prev}>Mars</li>
-  <li> Europa</li>
-  <li onClick={next}>Titan</li>
+      setSteps(steps-2)
+      click1()
+      }}>Moon
+      <hr className={`${true1 ? styles.lineshow : styles.linehide}`} />
+      </li>
+  <li onClick={(e) => {
+      prev()
+      click2()
+      }}>Mars
+  <hr className={`${true2 ? styles.lineshow : styles.linehide}`} />
+  </li>
+  <li onClick={(e) => {
+      click3()
+  }}> Europa
+  <hr className={`${true3 ? styles.lineshow : styles.linehide}`} />
+  </li>
+  <li onClick={(e) => {
+      next()
+      click4()
+  }}>Titan
+  <hr className={`${true4 ? styles.lineshow : styles.linehide}`} />
+  </li>
   </ul>
         </div>
         <div>
@@ -182,11 +204,28 @@ case 4:
         <div>
         <ul className={styles.list}>
   <li onClick={(e) => {
-      setSteps(steps-3)}}>Moon</li>
+      setSteps(steps-3)
+      click1()
+      }}>Moon
+      <hr className={`${true1 ? styles.lineshow : styles.linehide}`} />
+      </li>
   <li onClick={(e) => {
-      setSteps(steps-2)}}>Mars</li>
-  <li onClick={prev}> Europa</li>
-  <li>Titan</li>
+      setSteps(steps-2)
+      click2()
+      }}>Mars
+      <hr className={`${true2 ? styles.lineshow : styles.linehide}`} />
+      </li>
+  <li onClick={(e) => {
+      prev()
+      click3()
+  }}> Europa
+  <hr className={`${true3 ? styles.lineshow : styles.linehide}`} />
+  </li>
+  <li onClick={(e) => {
+      click4()
+  }}>Titan
+  <hr className={`${true4 ? styles.lineshow : styles.linehide}`} />
+  </li>
   </ul>
         </div>
         <div>

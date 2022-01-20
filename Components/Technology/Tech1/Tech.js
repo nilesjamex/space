@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useContext} from 'react';
 import Image from 'next/image';
 import styles from './Tech.module.css';
 import Vehicle from '../../../public/assets//technology/image-launch-vehicle-landscape.jpg';
@@ -7,17 +7,18 @@ import Spaceport from '../../../public/assets//technology/image-spaceport-landsc
 import Spaceport2 from '../../../public/assets//technology/image-spaceport-portrait.jpg';
 import Capsule from '../../../public/assets//technology/image-space-capsule-landscape.jpg';
 import Capsule2 from '../../../public/assets//technology/image-space-capsule-portrait.jpg';
+import { StepContext } from './../../../Contexts/Steps.js';
 const Tech = () => {
     const [steps, setSteps] = useState(1);
 
     const next = (e) => {
-        e.preventDefault();
         setSteps(steps + 1);
     }
     const prev = (e) => {
-        e.preventDefault();
         setSteps(steps - 1);
     };
+
+    const {click1, click2, click3, click4, true1, true2, true3} = useContext(StepContext)
 
     switch (steps) {
         case 1:
@@ -25,10 +26,19 @@ const Tech = () => {
         <div className={styles.techhome}>
            <div className={styles.TechNumbers}>
            <ul className={styles.numbers}>
-           <li className={styles.number}>1</li>
-           <li onClick={next} className={styles.number}>2</li>
+           <li 
+           className={`${true1 ? styles.number2 : styles.number}`} 
+           onClick={(e) => {
+               click1()
+           }}>1</li>
+           <li onClick={(e) => {
+               next()
+               click2()
+               }} className={`${true2 ? styles.number2 : styles.number}`}>2</li>
            <li  onClick={(e) => {
-      setSteps(steps+2)}} className={styles.number}>3</li>
+      setSteps(steps+2)
+      click3()
+      }} className={`${true3 ? styles.number2 : styles.number}`}>3</li>
            </ul>
            </div> 
            <div className={styles.techtext}>
@@ -53,9 +63,23 @@ const Tech = () => {
         <div className={styles.techhome}>
            <div>
            <ul className={styles.numbers}>
-           <li onClick={prev} className={styles.number}>1</li>
-           <li className={styles.number}>2</li>
-           <li onClick={next} className={styles.number}>3</li>
+           <li
+            onClick={(e) => {
+                prev()
+                click1()
+                }} 
+            className={`${true1 ? styles.number2 : styles.number}`} >1</li>
+           <li 
+           className={`${true2 ? styles.number2 : styles.number1}`} 
+           onClick={(e) => {
+               click2()
+           }}>2</li>
+           <li 
+           onClick={(e) => {
+                next()
+                click3()
+                }}
+            className={`${true3 ? styles.number2 : styles.number}`} >3</li>
            </ul>
            </div> 
            <div className={styles.techtext}>
@@ -82,21 +106,39 @@ const Tech = () => {
            <div>
            <ul className={styles.numbers}>
            <li  onClick={(e) => {
-      setSteps(steps-2)}} className={styles.number}>1</li>
-           <li onClick={prev} className={styles.number}>2</li>
-           <li className={styles.number}>3</li>
+      setSteps(steps-2)
+      click1()
+      }} 
+       className={`${true1 ? styles.number2 : styles.number}`} >1</li>
+           <li 
+           onClick={(e) => {
+               prev()
+               click2()
+               }} 
+            className={`${true2 ? styles.number2 : styles.number}`} >2</li>
+           <li 
+           className={`${true3 ? styles.number2 : styles.number}`} 
+           onClick={(e) => {
+               click3()
+           }}>3</li>
            </ul>
            </div> 
            <div className={styles.techtext}>
            <p className={styles.techtexthead}>The terminology...</p>
   <h2 className={styles.techtextsub}>Space capsule</h2>
 
-  <p className={styles.techtextbody}> A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
+  <p 
+  className={styles.techtextbody}>
+   A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
   capsule to reenter the Earths atmosphere without wings. Our capsule is where 
   you will spend your time during the flight. It includes a space gym, cinema, 
-  and plenty of other activities to keep you entertained.</p>
+  and plenty of other activities to keep you entertained.
+  </p>
   </div>
-  <div className={styles.imagediv}><Image src={Capsule2} height="527" width="515" alt="uu" /> </div>
+  <div
+   className={styles.imagediv}>
+   <Image src={Capsule2} height="527" width="515" alt="uu" /> 
+   </div>
   <div className={styles.imagediv2}>
   <Image className={styles.images} src={Capsule}  objectFit="contain" alt="uu" /> 
   </div>
