@@ -1,0 +1,25 @@
+.home {
+    background: url(../../public/assets/crew/background-crew-desktop.jpg);
+    background-size: cover;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.hometext {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.7rem;
+    line-height: 34px;letter-spacing: 4.725px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 5rem 0 1rem 10rem;
+}
+
+@media screen and (max-width: 768px) {
+    .hometext {
+        font-size: 1rem;
+        margin: 1rem 0 0 0;
+    }
+}
+
