@@ -43,7 +43,7 @@ const Tech = () => {
   WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
   it is quite an awe-inspiring sight on the launch pad!</p>
   </div>
-  <div className={styles.imagediv}><Image src={Vehicle2} height="527" width="515" alt="uu" /> </div>
+  <div className={styles.imagediv}><Image src={vehicle2} height="527" width="515" alt="uu" /> </div>
  <div className={styles.imagediv2}>
   <Image className={styles.images} src={Vehicle}  objectFit="contain" alt="uu" /> 
   </div>

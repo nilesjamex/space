@@ -156,7 +156,4 @@
     .crewImage {
         height: 232px;
     }
-    .crewImages {
-        object-fit: fill;
-    }
 }

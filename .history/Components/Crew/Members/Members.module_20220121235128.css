@@ -100,7 +100,6 @@
     }
     .crewImage {
         height: 532px;
-        justify-self: end;
     }
     .dotsplit {
         margin: 2rem 0 0 0rem;
@@ -133,30 +132,5 @@
         font-size: 1.5rem;
         line-height: 46px;
         margin-top: 1rem;
-    }
-    .dotsplit {
-        margin: 2rem 0 2rem 0rem;
-    }
-    .crewText {
-        display: flex;
-        flex-direction: column-reverse;
-        order: 2;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        height: 182px;
-    }
-    .crewImage {
-        height: 532px;
-        justify-self: end;
-        order: 1;
-    }
-}
-@media screen and (max-width: 500px) {
-    .crewImage {
-        height: 232px;
-    }
-    .crewImages {
-        object-fit: fill;
     }
 }

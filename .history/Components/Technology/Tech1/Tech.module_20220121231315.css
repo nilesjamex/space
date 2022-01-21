@@ -107,8 +107,8 @@
     .number {
         margin: 1rem;
     }
-    .numbers {
-        order: 1;
+    .TechNumbers {
+        order: 2;
     }
     .techtext {
         width: 458px;
@@ -135,7 +135,7 @@
     .imagediv2 {
         display: contents;
         margin: 2rem 0;
-        order: 2;
+        order: 1;
     }
     .images {
         width: 100%;

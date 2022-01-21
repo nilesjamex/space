@@ -45,7 +45,7 @@ const Tech = () => {
   </div>
   <div className={styles.imagediv}><Image src={Vehicle2} height="527" width="515" alt="uu" /> </div>
  <div className={styles.imagediv2}>
-  <Image className={styles.images} src={Vehicle}  objectFit="contain" alt="uu" /> 
+  <Image className={styles.images} src={Vehicle2}  objectFit="contain" alt="uu" /> 
   </div>
         </div>
     );

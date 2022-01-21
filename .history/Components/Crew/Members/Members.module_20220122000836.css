@@ -152,11 +152,3 @@
         order: 1;
     }
 }
-@media screen and (max-width: 500px) {
-    .crewImage {
-        height: 232px;
-    }
-    .crewImages {
-        object-fit: fill;
-    }
-}
