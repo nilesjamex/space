@@ -182,7 +182,7 @@
     .ExploreText {
         font-size: 1rem;
         line-height: 23px;
-        margin: 4rem auto;
+        margin: 1rem auto;
     }
 }
 @media screen and (max-width: 500px) {
