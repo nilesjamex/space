@@ -1,4 +1,4 @@
-import React, {useState, useContext} from 'react';
+import React, {useState, useContext, useEffect} from 'react';
 import Image from 'next/image';
 import styles from './Tech.module.css';
 import Vehicle from '../../../public/assets//technology/image-launch-vehicle-landscape.jpg';
@@ -10,8 +10,12 @@ import Capsule2 from '../../../public/assets//technology/image-space-capsule-por
 import { StepContext } from './../../../Contexts/Steps.js';
 import { MoveContext } from '../../../Contexts/Move';
 const Tech = () => {
-    const {steps, next, next2, prev, prev2} = useContext(MoveContext)
-    const {click1, click2, click3, click4, true1, true2, true3} = useContext(StepContext)
+    const {steps, next, next2, prev, prev2} = useContext(MoveContext);
+    const {click1, click2, click3, true1, true2, true3} = useContext(StepContext);
+
+    useEffect(() => {
+        click1()
+    }, [])
 
     switch (steps) {
         case 1:
@@ -135,8 +139,43 @@ const Tech = () => {
   </div>
         </div>
          )
+
+    case 4: 
+    return (
+        <div className={styles.techhome}>
+           <div className={styles.TechNumbers}>
+           <ul className={styles.numbers}>
+           <li 
+           className={`${true1 ? styles.number2 : styles.number}`} 
+           onClick={(e) => {
+               click1()
+               prev3()
+           }}>1</li>
+           <li onClick={(e) => {
+               prev2()
+               click2()
+               }} className={`${true2 ? styles.number2 : styles.number}`}>2</li>
+           <li  onClick={(e) => {
+      click3()
+      }} className={`${true3 ? styles.number2 : styles.number}`}>3</li>
+           </ul>
+           </div> 
+           <div className={styles.techtext}>
+           <p className={styles.techtexthead}>The terminology...</p>
+  <h2 className={styles.techtextsub}>Launch vehicle</h2>
+
+  <p className={styles.techtextbody}>A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+  payload from Earths surface to space, usually to Earth orbit or beyond. Our 
+  WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+  it is quite an awe-inspiring sight on the launch pad!</p>
+  </div>
+  <div className={styles.imagediv}><Image src={Vehicle2} height="527" width="515" alt="uu" /> </div>
+ <div className={styles.imagediv2}>
+  <Image className={styles.images} src={Vehicle}  objectFit="contain" alt="uu" /> 
+  </div>
+        </div>
+    )
     }
-    
 }
 
 export default Tech

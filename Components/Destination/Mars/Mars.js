@@ -1,4 +1,4 @@
-import React, {useState, useContext} from 'react';
+import React, {useState, useContext, useEffect} from 'react';
 import Image from "next/image";
 import styles from './Mars.module.css';
 import Moon from '../../../public/assets/destination/image-moon.png';
@@ -9,8 +9,12 @@ import { StepContext } from './../../../Contexts/Steps';
 import { MoveContext } from './../../../Contexts/Move';
 
 const Mars = () => {
-    const {steps, prev, prev2,prev3, next, next2,next3} = useContext(MoveContext)
-    const {click1, click2, click3, click4, true1, true2, true3, true4} = useContext(StepContext)
+    const {steps, prev, prev2,prev3, next, next2,next3} = useContext(MoveContext);
+    const {click1, click2, click3, click4, true1, true2, true3, true4} = useContext(StepContext);
+
+    useEffect(() => {
+        click1()
+    },[])
 
     switch (steps) {
         case 1:

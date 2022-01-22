@@ -13,6 +13,10 @@ const Members = () => {
     const {steps, next, next2, next3, prev, prev2, prev3 } = useContext(MoveContext);
    const {click1, click2, click3, click4, true1, true2, true3, true4} = useContext(StepContext)
 
+   useEffect(() => {
+        click1()
+    }, [])
+
 //    useEffect(() => {
 //          const interval = setInterval(() => {
 //             for (let i=0; i<3; i++) 
