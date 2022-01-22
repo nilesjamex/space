@@ -69,7 +69,7 @@
     .crewSplit {
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        align-content: space-around;
         gap: 6.7rem;
     }
     .crewText {
