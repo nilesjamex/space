@@ -1,7 +1,7 @@
 import React, {useRef, useLayoutEffect} from 'react';
 import Styles from './home.module.css';
 import Nav from './../Layout/Nav';
-import { gsap, TimelineLite, Power3} from 'gsap';
+import {TimelineLite, Power3, TweenLite} from 'gsap';
 import Link from 'next/link';
 
 

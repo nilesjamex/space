@@ -31,7 +31,7 @@
 @media screen and (max-width: 768px) {
     .home {
         background: url("../../../public/assets/destination/background-destination-mobile.jpg");
-        background-size: contain;
+        background-size: cover;
         height: 100vh;
     }
     .hometext {
