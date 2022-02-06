@@ -82,6 +82,17 @@
     height: 0.1rem;
     margin: 3rem 0 2rem 0;
 }
+.image {
+    animation: rotation 12 infinite linear;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
 .lineshow {
     width: 100%;
     background-color: white;

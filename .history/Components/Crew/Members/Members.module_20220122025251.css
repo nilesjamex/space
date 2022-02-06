@@ -39,6 +39,7 @@
 
 }
 .crewImages {
+    z-index: 1;
     padding-bottom: 0rem;
 }
 
@@ -157,7 +158,6 @@
     }
     .crewImages {
         object-fit: contain;
-        margin-bottom: 3rem;
     }
     .dotsplit {
         margin: 8rem 0 2rem 0rem;

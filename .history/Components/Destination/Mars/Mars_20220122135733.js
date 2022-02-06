@@ -21,7 +21,7 @@ const Mars = () => {
               return (
                   <div className={styles.moon}>
         <div className={styles.imagediv}>
-        <Image className={styles.image} src={Moon}  objectFit="contain" alt="uu" />
+        <Image src={Moon}  objectFit="contain" alt="uu" />
         </div>
         <div className={styles.moontext}>
         <div>
@@ -80,7 +80,7 @@ const Mars = () => {
     return (
         <div className={styles.moon}>
         <div className={styles.imagediv}>
-        <Image className={styles.image} src={Marss} objectFit="contain" alt="uu" />
+        <Image src={Marss} objectFit="contain" alt="uu" />
         </div>
         <div className={styles.moontext}>
         <div>
@@ -137,7 +137,7 @@ const Mars = () => {
     return (
         <div className={styles.moon}>
         <div className={styles.imagediv}>
-        <Image className={styles.image} src={Europa} objectFit="contain" alt="uu" />
+        <Image src={Europa} objectFit="contain" alt="uu" />
         </div>
         <div className={styles.moontext}>
         <div>
@@ -195,7 +195,7 @@ case 4:
     return (
          <div className={styles.moon}>
         <div className={styles.imagediv}>
-        <Image className={styles.image} src={Titan}objectFit="contain" alt="uu" />
+        <Image src={Titan}objectFit="contain" alt="uu" />
         </div>
         <div className={styles.moontext}>
         <div>
