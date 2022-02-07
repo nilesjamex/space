@@ -83,7 +83,8 @@
     margin: 3rem 0 2rem 0;
 }
 .image {
-    animation: rotation 12 infinite linear;
+    animation: rotation 4s infinite linear;
+    box-shadow: #D0D6F9;
 }
 @keyframes rotation {
     from {
